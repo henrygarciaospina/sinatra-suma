@@ -1,4 +1,8 @@
-<h2>Mi cuenta es: <strong> <%= @suma %></strong> </h2>
-<form action=<%= "/suma?suma=#{@suma.to_s}" %> method="post"> 
-  <input type="submit" value="Suma!!">  
-</form>
+<h2>Hola</h2>
+<% 50.times do |num| %>
+  <% if (num+1) % 2 != 0 %>
+   <h3><%= num+1 %> Soy Impar!</h3>
+  <% else %>
+   <h3><%= num+1 %> Soy Par!</h3>  
+  <% end %>
+<% end %>
