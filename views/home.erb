@@ -1,0 +1,4 @@
+<h2>Mi cuenta es: <strong> <%= @suma %></strong> </h2>
+<form action=<%= "/suma?suma=#{@suma.to_s}" %> method="post"> 
+  <input type="submit" value="Suma!!">  
+</form>
